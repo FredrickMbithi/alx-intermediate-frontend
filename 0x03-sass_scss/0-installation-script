@@ -1,0 +1,28 @@
+Installation steps taken to install SASS (SCSS) for this project
+
+1) (Optional) Install nvm (Node Version Manager) on Ubuntu/macOS:
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+   # After running the script, close and reopen the terminal (or run `source ~/.bashrc`).
+
+2) Install Node.js v20.16.0 using nvm (recommended):
+   nvm install 20.16.0
+   nvm use 20.16.0
+
+3) Verify node and npm are installed:
+   node -v
+   npm -v
+
+4) Install the SASS compiler (project-local install shown):
+   # Install specific version requested (3.7.4) locally
+   npm install --save-dev sass@3.7.4
+
+   # Or install globally (optional):
+   # npm install -g sass@3.7.4
+
+5) Verify sass is installed (local):
+   # If installed locally, use npx to run it
+   npx sass --version
+
+Notes:
+- The above installs the Dart Sass npm package at the requested version. If you prefer a global binary, use the -g flag.
+- If you already have Node.js or prefer another install method, adjust steps accordingly.
