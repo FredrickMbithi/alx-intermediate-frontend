@@ -1,12 +1,14 @@
-@mixin lr-margin($m) {
-  margin-left: $m;
-  margin-right: $m;
+// This file uses a mixin for margin-left and margin-right
+
+@mixin set-margins($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
 }
 
 body {
-  @include lr-margin(10px);
+  @include set-margins(10px, 10px);
 }
 
 div {
-  @include lr-margin(15px);
+  @include set-margins(15px, 15px);
 }
